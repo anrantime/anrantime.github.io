@@ -104,7 +104,16 @@ theme: hexo-theme-yilia-master
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+
+#deploy:
+#  type: git
+#  repo: https://github.com/anrantime/anrantime.github.io.git
+# branch: master
+
+
 deploy:
   type: git
-  repo: https://github.com/anrantime/anrantime.github.io.git
-  branch: master
+  repo: 
+   # coding: git@git.coding.net:anrantime/anrantime.git,master
+    github: git@github.com:anrantime/anrantime.github.io.git,master
+    #coding: git@e.coding.net:anrantime/hexoblog/hexo.git,master
