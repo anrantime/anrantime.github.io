@@ -1,5 +1,7 @@
 # Header
 
+#总体配置
+#1.百度统计  2.valine评论系统基于leancloud  3.不蒜子访问量和访问人次统计
 menu:
   主页: /
   随笔: /tags/随笔/
@@ -63,7 +65,8 @@ toc_empty_wording: '目录，不存在的…'
 top: true
 
 # Miscellaneous
-baidu_analytics: ''
+#百度统计
+baidu_analytics: 'e2909b15837aa0180d5b369bb87c44c6'
 google_analytics: ''
 favicon: /favicon.png
 
@@ -90,12 +93,30 @@ changyan_conf: false
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
 
+
 #5、Gitment
 gitment_owner: false      #你的 GitHub ID
 gitment_repo: ''          #存储评论的 repo
 gitment_oauth:
   client_id: ''           #client ID
   client_secret: ''       #client secret
+
+#6、Valine https://valine.js.org
+#leancloud评论系统，这只是提供了一个接口，所有数据 包括评论的删除 等 都需要在leancloud修改
+#主要在以下3个文件中修改
+#1.\hexo-theme-yilia-master\layout\_partial\article.ejs  最后添加相应code
+#2.在路径themes/yilia/layout/_partial/post/下创建新文件valine.ejs
+#3.在此文件中修改
+
+
+valine: 
+ appid:  GaID2BQst3SMBOOvES0nrDvg-gzGzoHsz   #Leancloud应用的appId
+ appkey: cDiP9FOyhnr4vxsf4D6SxoHP  #Leancloud应用的appKey
+ verify: false #验证码
+ notify: false #评论回复提醒
+ avatar: mm #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+ placeholder: Just go go #评论框占位符
+
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
@@ -107,7 +128,7 @@ style:
 # slider的设置
 slider:
   # 是否默认展开tags板块
-  showTags: false
+  showTags: true
 
 # 智能菜单
 # 如不需要，将该对应项置为false
@@ -119,6 +140,9 @@ smart_menu:
   friends: '友链'
   aboutme: '关于我'
 
+
+
+
 friends:
   友情链接1: http://localhost:4000/
   友情链接2: http://localhost:4000/
@@ -128,3 +152,4 @@ friends:
   友情链接6: http://localhost:4000/
 
 aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+
