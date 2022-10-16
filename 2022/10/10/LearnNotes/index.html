@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>waitingEditor | 安然空间</title>
+  <title>LearningNote | 安然空间</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="waitingEditor">
-<meta property="og:url" content="http://example.com/waitingEditor/index.html">
+  <meta name="description" content="Jackson Time">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LearningNote">
+<meta property="og:url" content="http://example.com/2022/10/10/LearnNotes/index.html">
 <meta property="og:site_name" content="安然空间">
+<meta property="og:description" content="Jackson Time">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-10-10T13:16:43.000Z">
-<meta property="article:modified_time" content="2022-10-10T13:16:43.430Z">
+<meta property="article:published_time" content="2022-10-10T12:26:57.000Z">
+<meta property="article:modified_time" content="2022-10-16T09:20:40.425Z">
 <meta property="article:author" content="Jackson">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="安然空间" type="application/atom+xml">
@@ -150,20 +154,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-LearnNotes" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      waitingEditor
+      LearningNote
     </h1>
   
 
         
-        <a href="/waitingEditor/index.html" class="archive-article-date">
-  	<time datetime="2022-10-10T13:16:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-10</time>
+        <a href="/2022/10/10/LearnNotes/" class="archive-article-date">
+  	<time datetime="2022-10-10T12:26:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-10</time>
 </a>
         
       </header>
@@ -176,13 +180,13 @@
           
   
     <h1 class="article-title" itemprop="name">
-      waitingEditor
+      LearningNote
     </h1>
   
 
           
-          <a href="/waitingEditor/index.html" class="archive-article-date">
-  	<time datetime="2022-10-10T13:16:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-10</time>
+          <a href="/2022/10/10/LearnNotes/" class="archive-article-date">
+  	<time datetime="2022-10-10T12:26:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-10</time>
 </a>
           
           <!-- 需要添加的位置 -->
@@ -196,7 +200,33 @@
   
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>Jackson Time</p>
+<span id="more"></span>
+
+<h1 id="一-使用"><a href="#一-使用" class="headerlink" title="一.使用"></a>一.使用</h1><h2 id="1-apps"><a href="#1-apps" class="headerlink" title="1.apps"></a>1.apps</h2><ul>
+<li>nodejs 自带npm</li>
+<li>git<h2 id="2-本地使用"><a href="#2-本地使用" class="headerlink" title="2.本地使用"></a>2.本地使用</h2></li>
+<li>1.hexo g</li>
+<li>2.hexo s //开启服务</li>
+<li><h2 id="3-git推送"><a href="#3-git推送" class="headerlink" title="3.git推送"></a>3.git推送</h2></li>
+<li>1.hexo clean</li>
+<li>2.hexo g         //generate</li>
+<li>3.hexo d         // 部署到hub<h2 id="4-hexo体系"><a href="#4-hexo体系" class="headerlink" title="4.hexo体系"></a>4.hexo体系</h2></li>
+</ul>
+<p>1.三种默认布局  post  page  draft<br>               布局    路径<br>            post    source/_posts<br>            page    source<br>            draft    source/_drafts<br>2.post<br>hexo new title 默认是post布局</p>
+<p>3.page<br>如果你想另起一页，那么可以使用<br>        hexo new page board</p>
+<p>系统会自动给你在source文件夹下创建一个board文件夹，以及<br>        board文件夹中的index.md，这样你访问的board对应的链接</p>
+<p>4.draft<br>draft是草稿的意思，也就是你如果想写文章，又不希望被看到，<br>那么可以</p>
+<p>hexo new draft newpage</p>
+<p>这样会在source/_draft中新建一个newpage.md文件，如果你的草<br> 稿文件写的过程中，想要预览一下，那么可以使用</p>
+<p>hexo server –draft</p>
+<p>在本地端口中开启服务预览。</p>
+<p>如果你的草稿文件写完了，想要发表到post中，</p>
+<p>hexo publish draft newpage</p>
+<p>就会自动把newpage.md发送到post中。</p>
+<h2 id="缩略显示"><a href="#缩略显示" class="headerlink" title="缩略显示"></a>缩略显示</h2><p>添加 就可以 “<!--more-->”</p>
+<p>注意在这之前得有正文内容，要不然还是会显示全文</p>
+
       
 
       
@@ -225,6 +255,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">learn</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -275,7 +320,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/waitingEditor/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/10/10/LearnNotes/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -287,6 +332,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2021/09/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -308,7 +363,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80-%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">一.使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-apps"><span class="toc-number">1.1.</span> <span class="toc-text">1.apps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%9C%AC%E5%9C%B0%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">2.本地使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-git%E6%8E%A8%E9%80%81"><span class="toc-number">1.3.</span> <span class="toc-text">3.git推送</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-hexo%E4%BD%93%E7%B3%BB"><span class="toc-number">1.4.</span> <span class="toc-text">4.hexo体系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%A9%E7%95%A5%E6%98%BE%E7%A4%BA"><span class="toc-number">1.5.</span> <span class="toc-text">缩略显示</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -388,7 +443,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
